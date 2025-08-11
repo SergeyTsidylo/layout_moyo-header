@@ -7,15 +7,9 @@ html {
   font-weight: 500;
 }
 
-.image {
-  width: 40px;
-  height: 40px;
-  justify-content: center;
-}
-
 body {
   margin: 0;
-  font-family: Robotto, sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 .header {
@@ -33,7 +27,6 @@ body {
 .nav {
   display: flex;
   justify-content: flex-end;
-  height: 60px;
 }
 
 .links {
@@ -46,24 +39,22 @@ body {
 .linksHref {
   color: #000;
   text-decoration: none;
+  height: 60px;
+  display: flex;
+  align-items: center;
 }
 
 .linksHref:hover {
   color: var(--primary-color);
 }
 
-.Laptops {
-  color: var(--primary-color);
-}
-
-.apple {
-  color: #000;
-}
-
 .is-active {
   color: var(--primary-color);
   position: relative;
   text-decoration: none;
+  height: 60px;
+  display: flex;
+  align-items: center;
 }
 
 .is-active:hover {
@@ -85,6 +76,6 @@ body {
   left: 0;
 }
 
-li:not(:first-child) {
+.links:not(:first-child) {
   margin-left: 10px;
 }
