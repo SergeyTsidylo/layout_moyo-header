@@ -1,3 +1,12 @@
+:root {
+  --primary-color: #00acdc;
+}
+
+html {
+  font-family: Roboto, sans-serif;
+  font-weight: 500px;
+}
+
 .image {
   width: 40px;
   height: 40px;
@@ -6,57 +15,65 @@
 
 body {
   margin: 0;
+  font-family: sans-serif;
+}
+
+.logotyp {
+  height: 0;
+  width: 0;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  height: 60px;
-  margin: 0 50px;
+  padding: 0 50px;
   align-items: center;
 }
 
-a {
+.linkslist {
   display: flex;
-  justify-content: center;
   position: relative;
-  text-decoration: none;
-  color: #000;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  height: 60px;
 }
 
 .links {
-  color: #000;
   font-size: 12px;
   text-transform: uppercase;
   list-style: none;
-  display: inline-block;
+  display: inline-flex;
+}
+
+.linksHref {
+  color: #000;
+  text-decoration: none;
+}
+
+.linksHref:hover {
+  color: var(--primary-color);
 }
 
 .Laptops {
-  color: #00acdc;
+  color: var(--primary-color);
 }
 
 .apple {
-  color: #00acdc;
-}
-
-.logo.c {
-  justify-content: center;
-  align-items: center;
+  color: #000;
 }
 
 .is-active {
-  color: #00acdc;
+  color: var(--primary-color);
   position: relative;
+  text-decoration: none;
 }
 
 [data-qa='hover'] {
-  color: #00acdc;
-}
-
-ul {
-  padding: 0;
-  display: flex;
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
 .is-active::after {
@@ -64,11 +81,11 @@ ul {
   content: '';
   width: 100%;
   height: 4px;
-  background-color: #00acdc;
+  background-color: var(--primary-color);
   bottom: 0;
   left: 0;
 }
 
 li:not(:first-child) {
-  margin-left: 40px;
+  margin-left: 10px;
 }
