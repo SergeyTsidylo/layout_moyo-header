@@ -4,7 +4,7 @@
 
 html {
   font-family: Roboto, sans-serif;
-  font-weight: 500px;
+  font-weight: 500;
 }
 
 .image {
@@ -15,12 +15,7 @@ html {
 
 body {
   margin: 0;
-  font-family: sans-serif;
-}
-
-.logotyp {
-  height: 0;
-  width: 0;
+  font-family: Robotto, sans-serif;
 }
 
 .header {
@@ -30,7 +25,7 @@ body {
   align-items: center;
 }
 
-.linkslist {
+.linksList {
   display: flex;
   position: relative;
 }
@@ -69,6 +64,10 @@ body {
   color: var(--primary-color);
   position: relative;
   text-decoration: none;
+}
+
+.is-active:hover {
+  color: var(--primary-color);
 }
 
 [data-qa='hover'] {
